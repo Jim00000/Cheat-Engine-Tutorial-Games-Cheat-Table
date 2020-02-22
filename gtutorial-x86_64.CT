@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="29">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"========== Cheat Engine Tutorial Game By Jim00000 =========="</Description>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1</ID>
+          <Description>"===== Level 1 ====="</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>7</ID>
+              <Description>"Shoot Counter"</Description>
+              <VariableType>4 Bytes</VariableType>
+              <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
+              <Offsets>
+                <Offset>6C</Offset>
+                <Offset>7C0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>15</ID>
+              <Description>"HP of Bullseye"</Description>
+              <VariableType>Float</VariableType>
+              <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
+              <Offsets>
+                <Offset>50</Offset>
+                <Offset>0</Offset>
+                <Offset>8</Offset>
+                <Offset>30</Offset>
+                <Offset>7C0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>8</ID>
+              <Description>"Infinite ammo"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+
+aobscanmodule(SHOOT_COUNTER_INJECTION,gtutorial-x86_64.exe,83 43 6C 01 48 89 73 70) // should be unique
+alloc(newmem,$1000,"gtutorial-x86_64.exe"+3D1D9)
+
+label(code)
+label(return)
+
+registersymbol(SHOOT_COUNTER_INJECTION)
+
+newmem:
+  // Do nothing
+code:
+  // Deactivate the addition of the shoot counter
+  // add dword ptr [rbx+6C],01
+  mov [rbx+70],rsi
+  jmp return
+
+SHOOT_COUNTER_INJECTION:
+  jmp newmem
+  nop 3
+return:
+
+[DISABLE]
+
+SHOOT_COUNTER_INJECTION:
+  db 83 43 6C 01 48 89 73 70
+
+unregistersymbol(SHOOT_COUNTER_INJECTION)
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "gtutorial-x86_64.exe"+3D1D9
+
+"gtutorial-x86_64.exe"+3D1B5: 48 8B 54 C3 38           -  mov rdx,[rbx+rax*8+38]
+"gtutorial-x86_64.exe"+3D1BA: 48 8B 43 28              -  mov rax,[rbx+28]
+"gtutorial-x86_64.exe"+3D1BE: 8B 40 28                 -  mov eax,[rax+28]
+"gtutorial-x86_64.exe"+3D1C1: 89 42 28                 -  mov [rdx+28],eax
+"gtutorial-x86_64.exe"+3D1C4: 44 89 E0                 -  mov eax,r12d
+"gtutorial-x86_64.exe"+3D1C7: 48 8B 54 C3 38           -  mov rdx,[rbx+rax*8+38]
+"gtutorial-x86_64.exe"+3D1CC: 48 8B 43 28              -  mov rax,[rbx+28]
+"gtutorial-x86_64.exe"+3D1D0: 8B 40 34                 -  mov eax,[rax+34]
+"gtutorial-x86_64.exe"+3D1D3: 89 42 34                 -  mov [rdx+34],eax
+"gtutorial-x86_64.exe"+3D1D6: 41 B5 01                 -  mov r13l,01
+// ---------- INJECTING HERE ----------
+"gtutorial-x86_64.exe"+3D1D9: 83 43 6C 01              -  add dword ptr [rbx+6C],01
+"gtutorial-x86_64.exe"+3D1DD: 48 89 73 70              -  mov [rbx+70],rsi
+// ---------- DONE INJECTING  ----------
+"gtutorial-x86_64.exe"+3D1E1: 48 63 43 6C              -  movsxd  rax,dword ptr [rbx+6C]
+"gtutorial-x86_64.exe"+3D1E5: BA 05 00 00 00           -  mov edx,00000005
+"gtutorial-x86_64.exe"+3D1EA: 48 29 C2                 -  sub rdx,rax
+"gtutorial-x86_64.exe"+3D1ED: 48 89 55 E0              -  mov [rbp-20],rdx
+"gtutorial-x86_64.exe"+3D1F1: 48 8D 45 E0              -  lea rax,[rbp-20]
+"gtutorial-x86_64.exe"+3D1F5: 48 89 45 F0              -  mov [rbp-10],rax
+"gtutorial-x86_64.exe"+3D1F9: 48 C7 45 E8 10 00 00 00  -  mov qword ptr [rbp-18],00000010
+"gtutorial-x86_64.exe"+3D201: 4C 8D 45 E8              -  lea r8,[rbp-18]
+"gtutorial-x86_64.exe"+3D205: 4D 31 C9                 -  xor r9,r9
+"gtutorial-x86_64.exe"+3D208: 48 8D 15 B9 94 27 00     -  lea rdx,[gtutorial-x86_64.exe+2B66C8]
+}
+</AssemblerScript>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3</ID>
+          <Description>"===== Level 2 ====="</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>20</ID>
+              <Description>"Player's HP"</Description>
+              <VariableType>4 Bytes</VariableType>
+              <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
+              <Offsets>
+                <Offset>60</Offset>
+                <Offset>28</Offset>
+                <Offset>7C0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>21</ID>
+              <Description>"Left Enemy's HP"</Description>
+              <VariableType>4 Bytes</VariableType>
+              <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
+              <Offsets>
+                <Offset>60</Offset>
+                <Offset>30</Offset>
+                <Offset>7C0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>22</ID>
+              <Description>"Right Enemy's HP"</Description>
+              <VariableType>4 Bytes</VariableType>
+              <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
+              <Offsets>
+                <Offset>60</Offset>
+                <Offset>38</Offset>
+                <Offset>7C0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>24</ID>
+              <Description>"One Hit Kill &amp; Invulnerability"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+
+aobscanmodule(ONE_HIT_KILL_INJECTION,gtutorial-x86_64.exe,48 89 C8 29 50 60) // should be unique
+alloc(newmem,$1000,"gtutorial-x86_64.exe"+400E0)
+
+label(code)
+label(leave)
+label(return)
+
+registersymbol(ONE_HIT_KILL_INJECTION)
+
+newmem:
+code:
+  mov rax,rcx
+
+  // Check whether it is a player
+  push rbx
+  mov rbx, ["gtutorial-x86_64.exe"+3CCD20]
+  mov rbx, [rbx+7C0]
+  mov rbx, [rbx+28]
+  cmp rax, rbx
+  je leave
+  mov edx, #200
+  sub [rax+60],edx
+leave:
+  pop rbx
+
+
+  // Got hit
+  //sub [rax+60],edx
+  jmp return
+
+ONE_HIT_KILL_INJECTION:
+  jmp newmem
+  nop
+return:
+
+[DISABLE]
+
+ONE_HIT_KILL_INJECTION:
+  db 48 89 C8 29 50 60
+
+unregistersymbol(ONE_HIT_KILL_INJECTION)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "gtutorial-x86_64.exe"+400E0
+
+"gtutorial-x86_64.exe"+400C6: E8 D5 57 FF FF           -  call gtutorial-x86_64.exe+358A0
+"gtutorial-x86_64.exe"+400CB: 90                       -  nop 
+"gtutorial-x86_64.exe"+400CC: 90                       -  nop 
+"gtutorial-x86_64.exe"+400CD: 66 0F 6F 74 24 20        -  movdqa xmm6,[rsp+20]
+"gtutorial-x86_64.exe"+400D3: 48 8D 64 24 30           -  lea rsp,[rsp+30]
+"gtutorial-x86_64.exe"+400D8: 5B                       -  pop rbx
+"gtutorial-x86_64.exe"+400D9: C3                       -  ret 
+"gtutorial-x86_64.exe"+400DA: 00 00                    -  add [rax],al
+"gtutorial-x86_64.exe"+400DC: 00 00                    -  add [rax],al
+"gtutorial-x86_64.exe"+400DE: 00 00                    -  add [rax],al
+// ---------- INJECTING HERE ----------
+"gtutorial-x86_64.exe"+400E0: 48 89 C8                 -  mov rax,rcx
+"gtutorial-x86_64.exe"+400E3: 29 50 60                 -  sub [rax+60],edx
+// ---------- DONE INJECTING  ----------
+"gtutorial-x86_64.exe"+400E6: C3                       -  ret 
+"gtutorial-x86_64.exe"+400E7: 00 00                    -  add [rax],al
+"gtutorial-x86_64.exe"+400E9: 00 00                    -  add [rax],al
+"gtutorial-x86_64.exe"+400EB: 00 00                    -  add [rax],al
+"gtutorial-x86_64.exe"+400ED: 00 00                    -  add [rax],al
+"gtutorial-x86_64.exe"+400EF: 00 53 56                 -  add [rbx+56],dl
+"gtutorial-x86_64.exe"+400F2: 48 8D 64 24 D8           -  lea rsp,[rsp-28]
+"gtutorial-x86_64.exe"+400F7: 48 89 CB                 -  mov rbx,rcx
+"gtutorial-x86_64.exe"+400FA: 48 89 D6                 -  mov rsi,rdx
+"gtutorial-x86_64.exe"+400FD: 48 85 F6                 -  test rsi,rsi
+}
+</AssemblerScript>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>2</ID>
+          <Description>"===== Level 3 ====="</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>32</ID>
+              <Description>"Green Platform Count"</Description>
+              <VariableType>4 Bytes</VariableType>
+              <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
+              <Offsets>
+                <Offset>88</Offset>
+                <Offset>7C0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>33</ID>
+              <Description>"Locked Door"</Description>
+              <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">1:Locked
+0:Unlocked
+</DropDownList>
+              <VariableType>Byte</VariableType>
+              <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
+              <Offsets>
+                <Offset>18</Offset>
+                <Offset>60</Offset>
+                <Offset>7C0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>34</ID>
+              <Description>"Spikes Are Sticked To The Door"</Description>
+              <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">1:Enabled
+0:Disabled
+</DropDownList>
+              <VariableType>Byte</VariableType>
+              <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
+              <Offsets>
+                <Offset>7D</Offset>
+                <Offset>7C0</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>28</ID>
+          <Description>"===== Miscellaneous ====="</Description>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>27</ID>
+              <Description>"Disable Integrity Check"</Description>
+              <LastState Activated="1"/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+
+aobscanmodule(INJECT,gtutorial-x86_64.exe,0F 94 43 70 80 7B 70 00) // should be unique
+alloc(newmem,$1000,"gtutorial-x86_64.exe"+39092)
+
+label(code)
+label(return)
+
+registersymbol(INJECT)
+
+newmem:
+  // Do nothing
+code:
+  // Deactivate
+  // sete byte ptr [rbx+70]
+  cmp byte ptr [rbx+70],00
+  jmp return
+
+INJECT:
+  jmp newmem
+  nop 3
+return:
+
+[DISABLE]
+
+INJECT:
+  db 0F 94 43 70 80 7B 70 00
+
+unregistersymbol(INJECT)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "gtutorial-x86_64.exe"+39092
+
+"gtutorial-x86_64.exe"+39076: 67 8D 04 07           -  lea eax,[rdi+eax]
+"gtutorial-x86_64.exe"+3907A: 85 C0                 -  test eax,eax
+"gtutorial-x86_64.exe"+3907C: 75 06                 -  jne gtutorial-x86_64.exe+39084
+"gtutorial-x86_64.exe"+3907E: 83 C0 01              -  add eax,01
+"gtutorial-x86_64.exe"+39081: 0F 1F 00              -  nop [rax]
+"gtutorial-x86_64.exe"+39084: 83 7B 64 00           -  cmp dword ptr [rbx+64],00
+"gtutorial-x86_64.exe"+39088: 75 05                 -  jne gtutorial-x86_64.exe+3908F
+"gtutorial-x86_64.exe"+3908A: 89 43 64              -  mov [rbx+64],eax
+"gtutorial-x86_64.exe"+3908D: EB 4B                 -  jmp gtutorial-x86_64.exe+390DA
+"gtutorial-x86_64.exe"+3908F: 3B 43 64              -  cmp eax,[rbx+64]
+// ---------- INJECTING HERE ----------
+"gtutorial-x86_64.exe"+39092: 0F 94 43 70           -  sete byte ptr [rbx+70]
+"gtutorial-x86_64.exe"+39096: 80 7B 70 00           -  cmp byte ptr [rbx+70],00
+// ---------- DONE INJECTING  ----------
+"gtutorial-x86_64.exe"+3909A: 74 20                 -  je gtutorial-x86_64.exe+390BC
+"gtutorial-x86_64.exe"+3909C: 48 8D 05 3D FE FF FF  -  lea rax,[gtutorial-x86_64.exe+38EE0]
+"gtutorial-x86_64.exe"+390A3: 48 89 44 24 20        -  mov [rsp+20],rax
+"gtutorial-x86_64.exe"+390A8: 48 89 5C 24 28        -  mov [rsp+28],rbx
+"gtutorial-x86_64.exe"+390AD: 48 8D 54 24 20        -  lea rdx,[rsp+20]
+"gtutorial-x86_64.exe"+390B2: 48 89 D9              -  mov rcx,rbx
+"gtutorial-x86_64.exe"+390B5: E8 56 14 02 00        -  call gtutorial-x86_64.exe+5A510
+"gtutorial-x86_64.exe"+390BA: EB 1E                 -  jmp gtutorial-x86_64.exe+390DA
+"gtutorial-x86_64.exe"+390BC: 48 8D 05 ED FE FF FF  -  lea rax,[gtutorial-x86_64.exe+38FB0]
+"gtutorial-x86_64.exe"+390C3: 48 89 44 24 20        -  mov [rsp+20],rax
+}
+</AssemblerScript>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
