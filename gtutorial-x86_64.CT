@@ -16,7 +16,6 @@
             <CheatEntry>
               <ID>7</ID>
               <Description>"Shoot Counter"</Description>
-              <LastState Value="0" RealAddress="015D260C"/>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -27,7 +26,6 @@
             <CheatEntry>
               <ID>15</ID>
               <Description>"HP of Bullseye"</Description>
-              <LastState Value="0" RealAddress="1002B7E30"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -116,7 +114,6 @@ dealloc(newmem)
             <CheatEntry>
               <ID>20</ID>
               <Description>"Player's HP"</Description>
-              <LastState Value="0" RealAddress="015E4AC0"/>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -128,7 +125,6 @@ dealloc(newmem)
             <CheatEntry>
               <ID>21</ID>
               <Description>"Left Enemy's HP"</Description>
-              <LastState Value="0" RealAddress="015E49D0"/>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -140,7 +136,6 @@ dealloc(newmem)
             <CheatEntry>
               <ID>22</ID>
               <Description>"Right Enemy's HP"</Description>
-              <LastState Value="0" RealAddress="01575BA0"/>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -240,7 +235,6 @@ dealloc(newmem)
             <CheatEntry>
               <ID>40</ID>
               <Description>"Player's Position: X"</Description>
-              <LastState Value="0.002513484098" RealAddress="015E4A84"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -252,7 +246,6 @@ dealloc(newmem)
             <CheatEntry>
               <ID>41</ID>
               <Description>"Player's Position: Y"</Description>
-              <LastState Value="0.6000000238" RealAddress="015E4A88"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -264,7 +257,6 @@ dealloc(newmem)
             <CheatEntry>
               <ID>49</ID>
               <Description>"Spike 1's Position: X"</Description>
-              <LastState Value="-0.2429993153" RealAddress="015E4384"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -277,7 +269,6 @@ dealloc(newmem)
             <CheatEntry>
               <ID>50</ID>
               <Description>"Spike 1's Position: Y"</Description>
-              <LastState Value="0.8999999762" RealAddress="015E4388"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -290,7 +281,6 @@ dealloc(newmem)
             <CheatEntry>
               <ID>51</ID>
               <Description>"Spike 2's Position: X"</Description>
-              <LastState Value="0.1025000438" RealAddress="015E4284"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -303,7 +293,6 @@ dealloc(newmem)
             <CheatEntry>
               <ID>52</ID>
               <Description>"Spike 2's Position: Y"</Description>
-              <LastState Value="0.8999999762" RealAddress="015E4288"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -316,7 +305,6 @@ dealloc(newmem)
             <CheatEntry>
               <ID>53</ID>
               <Description>"Spike 3's Position: X"</Description>
-              <LastState Value="-0.1362488866" RealAddress="015E4304"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -329,7 +317,6 @@ dealloc(newmem)
             <CheatEntry>
               <ID>54</ID>
               <Description>"Spike 3's Position: Y"</Description>
-              <LastState Value="-0.5749999881" RealAddress="015E4308"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -342,7 +329,6 @@ dealloc(newmem)
             <CheatEntry>
               <ID>32</ID>
               <Description>"Green Platform Count"</Description>
-              <LastState Value="3" RealAddress="015D2628"/>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -356,7 +342,6 @@ dealloc(newmem)
               <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">1:Locked
 0:Unlocked
 </DropDownList>
-              <LastState Value="1" RealAddress="015749C8"/>
               <VariableType>Byte</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -371,13 +356,53 @@ dealloc(newmem)
               <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">1:Enabled
 0:Disabled
 </DropDownList>
-              <LastState Value="0" RealAddress="015D261D"/>
               <VariableType>Byte</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
                 <Offset>7D</Offset>
                 <Offset>7C0</Offset>
               </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>55</ID>
+              <Description>"Spikes are transported to a remote location (Use PadNum1 to activate/deactivate)"</Description>
+              <LastState Activated="1"/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>{$lua}
+
+transport_all_spikes_activated = false
+
+function transport_all_spikes()
+    local addressList = getAddressList()
+    local NewY = -0.95
+    local Spike1 = addressList.getMemoryRecordByDescription("Spike 1's Position: Y")
+    local Spike2 = addressList.getMemoryRecordByDescription("Spike 2's Position: Y")
+    local Spike3 = addressList.getMemoryRecordByDescription("Spike 3's Position: Y")
+    if transport_all_spikes_activated == true then
+        Spike1.Value = Spike1_original_Y
+        Spike2.Value = Spike2_original_Y
+        Spike3.Value = Spike3_original_Y
+        transport_all_spikes_activated = false
+    else
+        Spike1_original_Y = Spike1.Value
+        Spike2_original_Y = Spike2.Value
+        Spike3_original_Y = Spike3.Value
+        Spike1.Value = NewY
+        Spike2.Value = NewY
+        Spike3.Value = NewY
+        transport_all_spikes_activated = true
+    end
+end
+
+[ENABLE]
+
+hkey=createHotkey(transport_all_spikes,VK_NUMPAD1)
+
+[DISABLE]
+
+hkey.destroy()
+
+</AssemblerScript>
             </CheatEntry>
           </CheatEntries>
         </CheatEntry>
@@ -459,4 +484,30 @@ dealloc(newmem)
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
+  <Comments>Game         : Cheat Engine Tutorial Games
+Process Name : gtutorial-x86_64.exe
+Author       : Jim00000
+Last Update  : 05.13.2020
+CE Version   : 7.0
+[License]
+MIT License
+Copyright (c) 2020 Jim00000
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</Comments>
+  <LuaScript>
+</LuaScript>
 </CheatTable>
