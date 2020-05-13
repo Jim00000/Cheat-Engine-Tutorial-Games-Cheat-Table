@@ -16,6 +16,7 @@
             <CheatEntry>
               <ID>7</ID>
               <Description>"Shoot Counter"</Description>
+              <LastState Value="0" RealAddress="015D260C"/>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -26,6 +27,7 @@
             <CheatEntry>
               <ID>15</ID>
               <Description>"HP of Bullseye"</Description>
+              <LastState Value="0" RealAddress="1002B7E30"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -114,6 +116,7 @@ dealloc(newmem)
             <CheatEntry>
               <ID>20</ID>
               <Description>"Player's HP"</Description>
+              <LastState Value="0" RealAddress="015E4AC0"/>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -125,6 +128,7 @@ dealloc(newmem)
             <CheatEntry>
               <ID>21</ID>
               <Description>"Left Enemy's HP"</Description>
+              <LastState Value="0" RealAddress="015E49D0"/>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -136,6 +140,7 @@ dealloc(newmem)
             <CheatEntry>
               <ID>22</ID>
               <Description>"Right Enemy's HP"</Description>
+              <LastState Value="0" RealAddress="01575BA0"/>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -233,8 +238,33 @@ dealloc(newmem)
           <GroupHeader>1</GroupHeader>
           <CheatEntries>
             <CheatEntry>
+              <ID>40</ID>
+              <Description>"Player's Position: X"</Description>
+              <LastState Value="-0.9505074024" RealAddress="015E4A84"/>
+              <VariableType>Float</VariableType>
+              <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
+              <Offsets>
+                <Offset>24</Offset>
+                <Offset>28</Offset>
+                <Offset>7C0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>41</ID>
+              <Description>"Player's Position: Y"</Description>
+              <LastState Value="0.8750000596" RealAddress="015E4A88"/>
+              <VariableType>Float</VariableType>
+              <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
+              <Offsets>
+                <Offset>28</Offset>
+                <Offset>28</Offset>
+                <Offset>7C0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
               <ID>32</ID>
               <Description>"Green Platform Count"</Description>
+              <LastState Value="1" RealAddress="015D2628"/>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -248,6 +278,7 @@ dealloc(newmem)
               <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">1:Locked
 0:Unlocked
 </DropDownList>
+              <LastState Value="1" RealAddress="015749C8"/>
               <VariableType>Byte</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -262,6 +293,7 @@ dealloc(newmem)
               <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">1:Enabled
 0:Disabled
 </DropDownList>
+              <LastState Value="0" RealAddress="015D261D"/>
               <VariableType>Byte</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -280,7 +312,7 @@ dealloc(newmem)
             <CheatEntry>
               <ID>27</ID>
               <Description>"Disable Integrity Check"</Description>
-              <LastState Activated="1"/>
+              <LastState/>
               <VariableType>Auto Assembler Script</VariableType>
               <AssemblerScript>[ENABLE]
 
