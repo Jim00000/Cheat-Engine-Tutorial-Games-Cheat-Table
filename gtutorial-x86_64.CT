@@ -240,7 +240,7 @@ dealloc(newmem)
             <CheatEntry>
               <ID>40</ID>
               <Description>"Player's Position: X"</Description>
-              <LastState Value="-0.9505074024" RealAddress="015E4A84"/>
+              <LastState Value="0.002513484098" RealAddress="015E4A84"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -252,7 +252,7 @@ dealloc(newmem)
             <CheatEntry>
               <ID>41</ID>
               <Description>"Player's Position: Y"</Description>
-              <LastState Value="0.8750000596" RealAddress="015E4A88"/>
+              <LastState Value="0.6000000238" RealAddress="015E4A88"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -262,9 +262,87 @@ dealloc(newmem)
               </Offsets>
             </CheatEntry>
             <CheatEntry>
+              <ID>49</ID>
+              <Description>"Spike 1's Position: X"</Description>
+              <LastState Value="-0.2429993153" RealAddress="015E4384"/>
+              <VariableType>Float</VariableType>
+              <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
+              <Offsets>
+                <Offset>24</Offset>
+                <Offset>0</Offset>
+                <Offset>38</Offset>
+                <Offset>7C0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>50</ID>
+              <Description>"Spike 1's Position: Y"</Description>
+              <LastState Value="0.8999999762" RealAddress="015E4388"/>
+              <VariableType>Float</VariableType>
+              <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
+              <Offsets>
+                <Offset>28</Offset>
+                <Offset>0</Offset>
+                <Offset>38</Offset>
+                <Offset>7C0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>51</ID>
+              <Description>"Spike 2's Position: X"</Description>
+              <LastState Value="0.1025000438" RealAddress="015E4284"/>
+              <VariableType>Float</VariableType>
+              <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
+              <Offsets>
+                <Offset>24</Offset>
+                <Offset>8</Offset>
+                <Offset>38</Offset>
+                <Offset>7C0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>52</ID>
+              <Description>"Spike 2's Position: Y"</Description>
+              <LastState Value="0.8999999762" RealAddress="015E4288"/>
+              <VariableType>Float</VariableType>
+              <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
+              <Offsets>
+                <Offset>28</Offset>
+                <Offset>8</Offset>
+                <Offset>38</Offset>
+                <Offset>7C0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>53</ID>
+              <Description>"Spike 3's Position: X"</Description>
+              <LastState Value="-0.1362488866" RealAddress="015E4304"/>
+              <VariableType>Float</VariableType>
+              <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
+              <Offsets>
+                <Offset>24</Offset>
+                <Offset>10</Offset>
+                <Offset>38</Offset>
+                <Offset>7C0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>54</ID>
+              <Description>"Spike 3's Position: Y"</Description>
+              <LastState Value="-0.5749999881" RealAddress="015E4308"/>
+              <VariableType>Float</VariableType>
+              <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
+              <Offsets>
+                <Offset>28</Offset>
+                <Offset>10</Offset>
+                <Offset>38</Offset>
+                <Offset>7C0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
               <ID>32</ID>
               <Description>"Green Platform Count"</Description>
-              <LastState Value="1" RealAddress="015D2628"/>
+              <LastState Value="3" RealAddress="015D2628"/>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
