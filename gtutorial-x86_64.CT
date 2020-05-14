@@ -8,7 +8,7 @@
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
         <CheatEntry>
-          <ID>1</ID>
+          <ID>3</ID>
           <Description>"===== Level 1 ====="</Description>
           <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
@@ -16,6 +16,7 @@
             <CheatEntry>
               <ID>7</ID>
               <Description>"Shoot Counter"</Description>
+              <LastState Value="0" RealAddress="015E697C"/>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -26,6 +27,7 @@
             <CheatEntry>
               <ID>15</ID>
               <Description>"HP of Bullseye"</Description>
+              <LastState Value="0" RealAddress="1002B7E30"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -106,14 +108,15 @@ dealloc(newmem)
           </CheatEntries>
         </CheatEntry>
         <CheatEntry>
-          <ID>3</ID>
-          <Description>"===== Level 2 ====="</Description>
+          <ID>1</ID>
+          <Description>"===== Level 2  ====="</Description>
           <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
           <CheatEntries>
             <CheatEntry>
               <ID>20</ID>
               <Description>"Player's HP"</Description>
+              <LastState Value="0" RealAddress="015F8E30"/>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -125,6 +128,7 @@ dealloc(newmem)
             <CheatEntry>
               <ID>21</ID>
               <Description>"Left Enemy's HP"</Description>
+              <LastState Value="0" RealAddress="015F8D40"/>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -136,6 +140,7 @@ dealloc(newmem)
             <CheatEntry>
               <ID>22</ID>
               <Description>"Right Enemy's HP"</Description>
+              <LastState Value="6619236" RealAddress="01589040"/>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -227,7 +232,7 @@ dealloc(newmem)
           </CheatEntries>
         </CheatEntry>
         <CheatEntry>
-          <ID>2</ID>
+          <ID>28</ID>
           <Description>"===== Level 3 ====="</Description>
           <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
@@ -235,6 +240,7 @@ dealloc(newmem)
             <CheatEntry>
               <ID>40</ID>
               <Description>"Player's Position: X"</Description>
+              <LastState Value="-0.8999999762" RealAddress="015F8DF4"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -246,6 +252,7 @@ dealloc(newmem)
             <CheatEntry>
               <ID>41</ID>
               <Description>"Player's Position: Y"</Description>
+              <LastState Value="0.8750000596" RealAddress="015F8DF8"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -257,6 +264,7 @@ dealloc(newmem)
             <CheatEntry>
               <ID>49</ID>
               <Description>"Spike 1's Position: X"</Description>
+              <LastState Value="-0.3499999344" RealAddress="015F86F4"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -269,6 +277,7 @@ dealloc(newmem)
             <CheatEntry>
               <ID>50</ID>
               <Description>"Spike 1's Position: Y"</Description>
+              <LastState Value="0.8999999762" RealAddress="015F86F8"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -281,6 +290,7 @@ dealloc(newmem)
             <CheatEntry>
               <ID>51</ID>
               <Description>"Spike 2's Position: X"</Description>
+              <LastState Value="0.8919999599" RealAddress="015F85F4"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -293,6 +303,7 @@ dealloc(newmem)
             <CheatEntry>
               <ID>52</ID>
               <Description>"Spike 2's Position: Y"</Description>
+              <LastState Value="0.8999999762" RealAddress="015F85F8"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -305,6 +316,7 @@ dealloc(newmem)
             <CheatEntry>
               <ID>53</ID>
               <Description>"Spike 3's Position: X"</Description>
+              <LastState Value="-0.1522497684" RealAddress="015F8674"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -317,6 +329,7 @@ dealloc(newmem)
             <CheatEntry>
               <ID>54</ID>
               <Description>"Spike 3's Position: Y"</Description>
+              <LastState Value="-0.5749999881" RealAddress="015F8678"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -329,6 +342,7 @@ dealloc(newmem)
             <CheatEntry>
               <ID>32</ID>
               <Description>"Green Platform Count"</Description>
+              <LastState Value="1" RealAddress="015E6998"/>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -342,6 +356,7 @@ dealloc(newmem)
               <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">1:Locked
 0:Unlocked
 </DropDownList>
+              <LastState Value="1" RealAddress="01587D28"/>
               <VariableType>Byte</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -356,6 +371,7 @@ dealloc(newmem)
               <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">1:Enabled
 0:Disabled
 </DropDownList>
+              <LastState Value="0" RealAddress="015E698D"/>
               <VariableType>Byte</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -366,7 +382,7 @@ dealloc(newmem)
             <CheatEntry>
               <ID>55</ID>
               <Description>"Spikes are transported to a remote location (Use PadNum1 to activate/deactivate)"</Description>
-              <LastState Activated="1"/>
+              <LastState/>
               <VariableType>Auto Assembler Script</VariableType>
               <AssemblerScript>{$lua}
 
@@ -394,20 +410,86 @@ function transport_all_spikes()
     end
 end
 
+function reset_spikes()
+    local addressList = getAddressList()
+    local Spike1 = addressList.getMemoryRecordByDescription("Spike 1's Position: Y")
+    local Spike2 = addressList.getMemoryRecordByDescription("Spike 2's Position: Y")
+    local Spike3 = addressList.getMemoryRecordByDescription("Spike 3's Position: Y")
+    Spike1.Value = 0.9
+    Spike2.Value = 0.9
+    Spike3.Value = -0.5749999881
+end
+
 [ENABLE]
 
 hkey=createHotkey(transport_all_spikes,VK_NUMPAD1)
 
 [DISABLE]
 
+reset_spikes()
+
 hkey.destroy()
 
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>56</ID>
+              <Description>"Disable Collision Detection"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+
+aobscanmodule(INJECTTION_COLLISION_DETECTION,gtutorial-x86_64.exe,FF 90 00 01 00 00 0F 2F C6 7A) // should be unique
+registersymbol(INJECTTION_COLLISION_DETECTION)
+
+INJECTTION_COLLISION_DETECTION:
+  nop
+  nop
+  nop
+  nop
+  nop
+  nop
+
+[DISABLE]
+
+INJECTTION_COLLISION_DETECTION:
+  db FF 90 00 01 00 00
+
+unregistersymbol(INJECTTION_COLLISION_DETECTION)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "gtutorial-x86_64.exe"+3B2AE
+
+"gtutorial-x86_64.exe"+3B284: FF 90 00 01 00 00     -  call qword ptr [rax+00000100]
+"gtutorial-x86_64.exe"+3B28A: 0F 2F C6              -  comiss xmm0,xmm6
+"gtutorial-x86_64.exe"+3B28D: 0F 8A 71 00 00 00     -  jp gtutorial-x86_64.exe+3B304
+"gtutorial-x86_64.exe"+3B293: 0F 86 6B 00 00 00     -  jbe gtutorial-x86_64.exe+3B304
+"gtutorial-x86_64.exe"+3B299: 48 89 F1              -  mov rcx,rsi
+"gtutorial-x86_64.exe"+3B29C: 48 8B 06              -  mov rax,[rsi]
+"gtutorial-x86_64.exe"+3B29F: FF 90 F8 00 00 00     -  call qword ptr [rax+000000F8]
+"gtutorial-x86_64.exe"+3B2A5: 0F 28 F0              -  movaps xmm6,xmm0
+"gtutorial-x86_64.exe"+3B2A8: 48 89 D9              -  mov rcx,rbx
+"gtutorial-x86_64.exe"+3B2AB: 48 8B 03              -  mov rax,[rbx]
+// ---------- INJECTING HERE ----------
+"gtutorial-x86_64.exe"+3B2AE: FF 90 00 01 00 00     -  call qword ptr [rax+00000100]
+// ---------- DONE INJECTING  ----------
+"gtutorial-x86_64.exe"+3B2B4: 0F 2F C6              -  comiss xmm0,xmm6
+"gtutorial-x86_64.exe"+3B2B7: 7A 4B                 -  jp gtutorial-x86_64.exe+3B304
+"gtutorial-x86_64.exe"+3B2B9: 76 49                 -  jna gtutorial-x86_64.exe+3B304
+"gtutorial-x86_64.exe"+3B2BB: 48 89 D9              -  mov rcx,rbx
+"gtutorial-x86_64.exe"+3B2BE: 48 8B 03              -  mov rax,[rbx]
+"gtutorial-x86_64.exe"+3B2C1: FF 90 08 01 00 00     -  call qword ptr [rax+00000108]
+"gtutorial-x86_64.exe"+3B2C7: 0F 28 F0              -  movaps xmm6,xmm0
+"gtutorial-x86_64.exe"+3B2CA: 48 89 F1              -  mov rcx,rsi
+"gtutorial-x86_64.exe"+3B2CD: 48 8B 06              -  mov rax,[rsi]
+"gtutorial-x86_64.exe"+3B2D0: FF 90 10 01 00 00     -  call qword ptr [rax+00000110]
+}
 </AssemblerScript>
             </CheatEntry>
           </CheatEntries>
         </CheatEntry>
         <CheatEntry>
-          <ID>28</ID>
+          <ID>2</ID>
           <Description>"===== Miscellaneous ====="</Description>
           <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
@@ -508,6 +590,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 </Comments>
-  <LuaScript>
-</LuaScript>
 </CheatTable>
