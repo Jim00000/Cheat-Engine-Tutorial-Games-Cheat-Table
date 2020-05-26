@@ -16,7 +16,6 @@
             <CheatEntry>
               <ID>11</ID>
               <Description>"Shoot Counter"</Description>
-              <LastState Value="0" RealAddress="0159F7BC"/>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -115,7 +114,6 @@ dealloc(newmem)
             <CheatEntry>
               <ID>20</ID>
               <Description>"Player's HP"</Description>
-              <LastState Value="32" RealAddress="015678E0"/>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -130,7 +128,6 @@ dealloc(newmem)
               <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">1:Enabled
 0:Disabled
 </DropDownList>
-              <LastState Value="0" RealAddress="0159F7AC"/>
               <VariableType>Byte</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -141,7 +138,6 @@ dealloc(newmem)
             <CheatEntry>
               <ID>21</ID>
               <Description>"Pointer to Left Enemy (Set 0 to kill)"</Description>
-              <LastState Value="01567A60" RealAddress="0159F780"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
@@ -153,7 +149,6 @@ dealloc(newmem)
             <CheatEntry>
               <ID>59</ID>
               <Description>"Left Enemy's HP"</Description>
-              <LastState Value="200" RealAddress="01567AC0"/>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -165,7 +160,6 @@ dealloc(newmem)
             <CheatEntry>
               <ID>22</ID>
               <Description>"Pointer to Right Enemy (Set 0 to kill)"</Description>
-              <LastState Value="015677E0" RealAddress="0159F788"/>
               <ShowAsHex>1</ShowAsHex>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
@@ -177,7 +171,6 @@ dealloc(newmem)
             <CheatEntry>
               <ID>60</ID>
               <Description>"Right Enemy's HP"</Description>
-              <LastState Value="200" RealAddress="01567840"/>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -277,7 +270,6 @@ dealloc(newmem)
             <CheatEntry>
               <ID>40</ID>
               <Description>"Player's Position: X"</Description>
-              <LastState Value="0" RealAddress="015678A4"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -289,7 +281,6 @@ dealloc(newmem)
             <CheatEntry>
               <ID>41</ID>
               <Description>"Player's Position: Y"</Description>
-              <LastState Value="0.8000000119" RealAddress="015678A8"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -301,7 +292,6 @@ dealloc(newmem)
             <CheatEntry>
               <ID>49</ID>
               <Description>"Spike 1's Position: X"</Description>
-              <LastState Value="0" RealAddress="1002B6FBC"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -314,7 +304,6 @@ dealloc(newmem)
             <CheatEntry>
               <ID>50</ID>
               <Description>"Spike 1's Position: Y"</Description>
-              <LastState Value="0" RealAddress="1002B6FC0"/>
               <VariableType>Float</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -375,7 +364,6 @@ dealloc(newmem)
             <CheatEntry>
               <ID>32</ID>
               <Description>"Green Platform Count"</Description>
-              <LastState Value="22509888" RealAddress="0159F7D8"/>
               <VariableType>4 Bytes</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -403,7 +391,6 @@ dealloc(newmem)
               <DropDownList ReadOnly="1" DescriptionOnly="1" DisplayValueAsItem="1">1:Enabled
 0:Disabled
 </DropDownList>
-              <LastState Value="0" RealAddress="0159F7CD"/>
               <VariableType>Byte</VariableType>
               <Address>"gtutorial-x86_64.exe"+3CCD20</Address>
               <Offsets>
@@ -529,7 +516,7 @@ unregistersymbol(INJECTTION_COLLISION_DETECTION)
             <CheatEntry>
               <ID>27</ID>
               <Description>"Disable Integrity Check"</Description>
-              <LastState Activated="1"/>
+              <LastState/>
               <VariableType>Auto Assembler Script</VariableType>
               <AssemblerScript>[ENABLE]
 
@@ -650,8 +637,9 @@ void FUN_100039050(longlong param_1)
   <Comments>Game         : Cheat Engine Tutorial Games
 Process Name : gtutorial-x86_64.exe
 Author       : Jim00000
-Last Update  : 05.13.2020
+Last Update  : 05.26.2020
 CE Version   : 7.0
+URL          : https://github.com/Jim00000/Cheat-Engine-Tutorial-Games-Cheat-Table
 [License]
 MIT License
 Copyright (c) 2020 Jim00000
